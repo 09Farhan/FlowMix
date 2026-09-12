@@ -1,0 +1,19 @@
+{
+  "name": "@flowmix/ui",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "private": true,
+  "dependencies": {
+    "react": "19.0.0-rc",
+    "react-dom": "19.0.0-rc",
+    "framer-motion": "latest",
+    "@flowmix/design-tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@flowmix/config": "workspace:*",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "tailwindcss": "latest"
+  }
+}
