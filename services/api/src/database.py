@@ -3,9 +3,11 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, Asyn
 from sqlalchemy.orm import declarative_base
 import os
 
-# Default to local docker-compose connection string if not provided
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://flowmix:password@localhost:5432/flowmix_dev")
+# Use SQLite fallback by default for local development without Docker
+# For production, supply a postgresql+asyncpg URL via DATABASE_URL
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./flowmix.db")
 
+# SQLite async driver (aiosqlite) requires specific poolclass/connect_args, but we use defaults for simplicity in MVP
 engine = create_async_engine(DATABASE_URL, echo=True)
 async_session = async_sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 
