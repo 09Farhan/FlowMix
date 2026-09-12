@@ -4,16 +4,17 @@
   "main": "index.ts",
   "private": true,
   "dependencies": {
-    "react": "19.0.0-rc",
-    "react-dom": "19.0.0-rc",
+    "@flowmix/design-tokens": "workspace:*",
     "framer-motion": "latest",
-    "@flowmix/design-tokens": "workspace:*"
+    "lucide-react": "^1.45.0",
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1"
   },
   "devDependencies": {
     "@flowmix/config": "workspace:*",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }
