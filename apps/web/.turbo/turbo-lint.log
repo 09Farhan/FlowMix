@@ -1,0 +1,6 @@
+
+> web@1.0.0 lint D:\FlowMix\apps\web
+> next lint
+
+ ⨯ ESLint must be installed: pnpm install --save-dev eslint
+ ELIFECYCLE  Command failed with exit code 1.

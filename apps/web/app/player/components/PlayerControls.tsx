@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { IconButton } from '@flowmix/ui/components/IconButton'
+import { IconButton } from '@flowmix/ui'
 import { usePlayerStore } from '../../../lib/playerStore'
 import { Play, Pause, SkipForward, SkipBack, Shuffle, Repeat } from 'lucide-react'
 

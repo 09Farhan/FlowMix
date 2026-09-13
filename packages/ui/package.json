@@ -2,13 +2,22 @@
   "name": "@flowmix/ui",
   "version": "1.0.0",
   "main": "index.ts",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "import": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
   "private": true,
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
   "dependencies": {
     "@flowmix/design-tokens": "workspace:*",
     "framer-motion": "latest",
-    "lucide-react": "^1.45.0",
-    "react": "19.0.0-rc.1",
-    "react-dom": "19.0.0-rc.1"
+    "lucide-react": "^1.45.0"
   },
   "devDependencies": {
     "@flowmix/config": "workspace:*",

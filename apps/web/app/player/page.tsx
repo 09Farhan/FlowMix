@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { TrackInfo } from './components/TrackInfo'
 import { PlayerControls } from './components/PlayerControls'
 import { TransitionToggle } from './components/TransitionToggle'
-import { Slider } from '@flowmix/ui/components/Slider'
+import { Slider } from '@flowmix/ui'
 import { usePlayerStore } from '../../lib/playerStore'
 import { Volume2, VolumeX } from 'lucide-react'
 

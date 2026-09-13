@@ -1,1 +1,38 @@
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+.nyc_output
+.pytest_cache
+htmlcov/
+
+# Next.js
+.next/
+out/
+build
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Databases
+*.db
+flowmix.db
+
+# OS
+.DS_Store
+Thumbs.db
