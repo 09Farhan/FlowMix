@@ -9,25 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
+    "@tanstack/react-query": "latest",
+    "framer-motion": "latest",
     "next": "15.0.0",
     "react": "19.0.0-rc.1",
     "react-dom": "19.0.0-rc.1",
-    "framer-motion": "latest",
-    "@react-three/fiber": "latest",
-    "@react-three/drei": "latest",
     "three": "latest",
-    "zustand": "latest",
-    "@tanstack/react-query": "latest",
-    "zod": "latest"
+    "zod": "latest",
+    "zustand": "latest"
   },
   "devDependencies": {
+    "@flowmix/config": "workspace:*",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "latest",
-    "tailwindcss": "latest",
-    "postcss": "latest",
     "autoprefixer": "latest",
-    "@flowmix/config": "workspace:*"
+    "postcss": "latest",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.0.0"
   }
 }

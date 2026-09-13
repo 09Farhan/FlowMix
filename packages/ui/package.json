@@ -14,7 +14,7 @@
     "@flowmix/config": "workspace:*",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "tailwindcss": "latest",
-    "typescript": "latest"
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.0.0"
   }
 }

@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { register } from '../../lib/api'
-import { useAuthStore } from '../../lib/auth'
+import { register } from '../../../lib/api'
+import { useAuthStore } from '../../../lib/auth'
 import Link from 'next/link'
 import { Button } from '@flowmix/ui'
 

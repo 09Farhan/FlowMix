@@ -4,4 +4,4 @@ const nextConfig = {
   transpilePackages: ["@flowmix/ui", "@flowmix/design-tokens"]
 };
 
-export default nextConfig;
+module.exports = nextConfig;
