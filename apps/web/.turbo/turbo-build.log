@@ -14,13 +14,14 @@
    Linting and checking validity of types ...
 Failed to compile.
 
-../../packages/ui/components/Button.tsx:1:19
-Type error: Could not find a declaration file for module 'react'. 'D:/FlowMix/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js' implicitly has an 'any' type.
-  If the 'react' package actually exposes this module, consider sending a pull request to amend 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react'
+./app/player/page.tsx:13:11
+Type error: Property 'currentTrack' does not exist on type 'PlayerState'.
 
-[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m'react'[39m[33m;[39m[0m
-[0m [90m   |[39m                   [31m[1m^[22m[39m[0m
-[0m [90m 2 |[39m [36mimport[39m { motion[33m,[39m [33mHTMLMotionProps[39m } [36mfrom[39m [32m'framer-motion'[39m[33m;[39m[0m
-[0m [90m 3 |[39m[0m
-[0m [90m 4 |[39m [36mexport[39m [36minterface[39m [33mButtonProps[39m [36mextends[39m [33mHTMLMotionProps[39m[33m<[39m[32m'button'[39m[33m>[39m {[0m
+[0m [90m 11 |[39m[0m
+[0m [90m 12 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mPlayerPage[39m() {[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m   [36mconst[39m { currentTrack[33m,[39m progress[33m,[39m setProgress[33m,[39m volume[33m,[39m setVolume[33m,[39m isPlaying } [33m=[39m usePlayerStore()[0m
+[0m [90m    |[39m           [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m[0m
+[0m [90m 15 |[39m   [90m// Mock progress simulation[39m[0m
+[0m [90m 16 |[39m   useEffect(() [33m=>[39m {[0m
  ELIFECYCLE  Command failed with exit code 1.
